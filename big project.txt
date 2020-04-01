@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <title>Profile User</title>
+    <meta name = "viewport" content= "width = device-width, initial-scale = 1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href = "">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+        .main{
+  margin: 50px;
+  background-color: #d75d77;
+  border: 5px solid pink; 
+}
+
+.nav-bar{
+  word-spacing: 40px;
+  font-size: 20px;
+  font-family: arial;
+}
+
+.nav-bar ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar ul li{
+  display: inline-block;
+  -webkit-transition: border 1s, border-radius 1s, padding 1s, background-color 1s, color 1s;
+}
+
+.nav-bar ul li:hover{
+  border-bottom: 2px solid gray;
+  border-radius: 10%;
+  padding: 10px;
+  background-color: #e91e63;
+  color: white;
+}
+
+        .Profile{
+            font-family: sans-serif;
+            text-align: center;
+            max-width: 200px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            padding: 20px
+        }
+        .Profile__image{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+        }
+        .profile__name{
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        profile__title{
+            margin-bottom: 20px;
+        }
+        .profile__detail{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9em;
+        }
+​
+    </style>
+​
+</head>
+<body>
+    <div class="main">
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#"> Home </a></li>
+          <li><a href="#"> NewsFeed </a></li>
+          <li><a href="#"> Users </a></li>
+          <li><a href="#"> Admin</a </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="Profile">
+        <img src ="portrait.jpg" alt="profile image" class= "profile__image">
+        <div class = "profile__name">Kate Levi</div>
+        <div class = "profile__email">Kate.Levi@gmail.com</div>
+        <div class = "profile__contact">cell number:079 876 6345 landline:021 704 8775</div>
+
+        <div class="Profile">
+        <img src ="portrait.jpg" alt="profile image" class= "profile__image">
+        <div class = "profile__name">Mike Jones</div>
+        <div class = "profile__email">MikeJones@gmail.com</div>
+        <div class = "profile__contact">cell number:078 879 6845 landline:021 708 8375</div>
+        
+        
+        <div class="Profile">
+        <img src ="portrait.jpg" alt="profile image" class= "profile__image">
+        <div class = "profile__name">Sarah Forest</div>
+        <div class = "profile__email">Sarahforest@gmail.com</div>
+        <div class = "profile__contact">cell number:074 979 5805 landline:021 708 8375</div>
+
+        
+        <div class="Profile">
+        <img src ="portrait.jpg" alt="profile image" class= "profile__image">
+        <div class = "profile__name">Jonny Dip</div>
+        <div class = "profile__email">Jonnydip@gmail.com</div>
+        <div class = "profile__contact">cell number:076 873 2145 landline:021 708 8375</div>
+        
