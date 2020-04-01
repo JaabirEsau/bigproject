@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href = "">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+<!--     Take these styles and put them  in an external .css page -->
     <style>
         .main{
   margin: 50px;
@@ -80,14 +81,19 @@
         </ul>
       </nav>
     </div>
+        
+<!--  You are not closing your profile divs    -->
     <div class="Profile">
         <img src ="portrait.jpg" alt="profile image" class= "profile__image">
         <div class = "profile__name">Kate Levi</div>
         <div class = "profile__email">Kate.Levi@gmail.com</div>
         <div class = "profile__contact">cell number:079 876 6345 landline:021 704 8775</div>
-
+    <!-- there should be a </div> here  -->
+        
+        
         <div class="Profile">
         <img src ="portrait.jpg" alt="profile image" class= "profile__image">
+        <!-- When putting in content like this, use the <h1> to <h6> and <p> tags to format this data, not <div> tags -->
         <div class = "profile__name">Mike Jones</div>
         <div class = "profile__email">MikeJones@gmail.com</div>
         <div class = "profile__contact">cell number:078 879 6845 landline:021 708 8375</div>
@@ -106,6 +112,8 @@
         <div class = "profile__email">Jonnydip@gmail.com</div>
         <div class = "profile__contact">cell number:076 873 2145 landline:021 708 8375</div>
         
-        
+      
+            
+            <!-- No closing </body> or </html> tag             -->
     
         
