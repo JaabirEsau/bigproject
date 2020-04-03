@@ -1,119 +1,397 @@
 <!DOCTYPE html>
-<head>
-    <title>Profile User</title>
-    <meta name = "viewport" content= "width = device-width, initial-scale = 1.0">
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href = "">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-<!--     Take these styles and put them  in an external .css page -->
-    <style>
-        .main{
-  margin: 50px;
-  background-color: #d75d77;
-  border: 5px solid pink; 
-}
+<html lang="en">
+  <head>
+    <!--css inports and page info-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Project</title>
 
-.nav-bar{
-  word-spacing: 40px;
-  font-size: 20px;
-  font-family: arial;
-}
+    <!--3rd party css-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
-.nav-bar ul li a{
-  text-decoration: none;
-  color: white;
-}
+    <!--my personal css styling preferences-->
+    <link rel="stylesheet" href="styling.css/custom.css" />
+  </head>
+  <body>
+    <!--my navbar-->
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News Feed</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Users</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Adim</a>
+        </li>
+    </na>
+    <!--container for cards-->
+    <div class="container">
+      <div class="row row-cols-4">
+        <div class="col">
+          <!--here is my card-->
+          <div class="card zdepth2">
+            <!--Card image-->
+            <img
+              src="https://i.pravatar.cc/300"
+              alt="Random avatar"
+              class="profile-image"
+            />
+            <!--card person name-->
+            <p class="head">
+              katie Harvard
+            </p>
+            <!--extra info-->
+            <p class="subhead">
+              email address
+            </p>
+            <p class="subhead">
+              cell phone number
+            </p>
+            <p class="subhead">
+              land line number
+            </p>
+            <!-- Button to Open the Modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#katie"
+            >
+              Open info
+            </button>
 
-.nav-bar ul li{
-  display: inline-block;
-  -webkit-transition: border 1s, border-radius 1s, padding 1s, background-color 1s, color 1s;
-}
+            <!-- The Modal -->
+            <div class="modal" id="katie">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Important info</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                  </div>
 
-.nav-bar ul li:hover{
-  border-bottom: 2px solid gray;
-  border-radius: 10%;
-  padding: 10px;
-  background-color: #e91e63;
-  color: white;
-}
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    katie data
+                  </div>
+                  <div class="modal-body">
+                    home address
+                  </div>
+                  <div class="modal-body">
+                    next kin name
+                  </div>
+                  <div class="modal-body">
+                    next kin relationship
+                  </div>
+                  <div class="modal-body">
+                    next kin cellphone number and email
+                  </div>
 
-        .Profile{
-            font-family: sans-serif;
-            text-align: center;
-            max-width: 200px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-            padding: 20px
-        }
-        .Profile__image{
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            display: block;
-        }
-        .profile__name{
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-        profile__title{
-            margin-bottom: 20px;
-        }
-        .profile__detail{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.9em;
-        }
-​
-    </style>
-​
-</head>
-<body>
-    <div class="main">
-      <nav class="nav-bar">
-        <ul>
-          <li><a href="#"> Home </a></li>
-          <li><a href="#"> NewsFeed </a></li>
-          <li><a href="#"> Users </a></li>
-          <li><a href="#"> Admin</a </li>
-        </ul>
-      </nav>
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end of info button -->
+         <!-- Button to Open the delete Modal -->
+        <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#User"
+      >
+        Delete User
+      </button>
+      <!-- The Delete Modal -->
+      <div class="modal" id="User">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Are you sure want to delete?</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              <button class="btn btn-primary">yes</button>
+              <button class="btn-danger">no</button>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-dismiss="cancel"
+              >
+                Close
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ul>
+    <!--end of delete of buuton-->
+          <!--End of card-->
+        </div>
+        <div class="col">
+          <!--here is my card-->
+          <div class="card zdepth2">
+            <img
+              src="https://i.pravatar.cc/300"
+              alt="Random avatar"
+              class="profile-image"
+            />
+            <p class="head">
+              james Frank
+            </p>
+            <!--extra info-->
+            <p class="subhead">
+              email address
+            </p>
+            <p class="subhead">
+              cell phone number
+            </p>
+            <p class="subhead">
+              land line number
+            </p>
+            <!-- Button to Open the Modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#james"
+            >
+              open info
+            </button>
+
+            <!-- The Modal -->
+            <div class="modal" id="james">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">important info</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    james data
+                  </div>
+                  <div class="modal-body">
+                    home address
+                  </div>
+                  <div class="modal-body">
+                    next kin name
+                  </div>
+                  <div class="modal-body">
+                    next kin relationship
+                  </div>
+                  <div class="modal-body">
+                    next kin cellphone number and email
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--off of button-->
+          <!--End of card-->
+        </div>
+        <div class="col">
+          <!--here is my card-->
+          <div class="card zdepth2">
+            <img
+              src="https://i.pravatar.cc/300"
+              alt="Random avatar"
+              class="profile-image"
+            />
+            <p class="head">
+              Mathew Grey
+            </p>
+            <p class="subhead">
+              email address
+            </p>
+            <p class="subhead">
+              cell phone number
+            </p>
+            <p class="subhead">
+              land line number
+            </p>
+            <!-- Button to Open the Modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#mathew"
+            >
+              open info
+            </button>
+
+            <!-- The Modal -->
+            <div class="modal" id="mathew">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">important info</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    mathew data
+                  </div>
+                  <div class="modal-body">
+                    home address
+                  </div>
+                  <div class="modal-body">
+                    next of kin name
+                  </div>
+                  <div class="modal-body">
+                    next of kin relationship
+                  </div>
+                  <div class="modal-body">
+                    next of kin cell phone number and email
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end of buuton-->
+          <!--End of card-->
+        </div>
+        <div class="col">
+          <!--here is my card-->
+          <div class="card zdepth2">
+            <img
+              src="https://i.pravatar.cc/300"
+              alt="Random avatar"
+              class="profile-image"
+            />
+            <p class="head">
+              Casie Jones
+            </p>
+            <p class="subhead">
+              email address
+            </p>
+            <p class="subhead">
+              cell phone number
+            </p>
+            <p class="subhead">
+              land line number
+            </p>
+            <!-- Button to Open the Modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#casie"
+            >
+              open info
+            </button>
+
+            <!-- The Modal -->
+            <div class="modal" id="casie">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">important info</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    casien data
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end of button-->
+          <!--End of card-->
+        </div>
+      </div>
     </div>
-        
-<!--  You are not closing your profile divs    -->
-    <div class="Profile">
-        <img src ="portrait.jpg" alt="profile image" class= "profile__image">
-        <div class = "profile__name">Kate Levi</div>
-        <div class = "profile__email">Kate.Levi@gmail.com</div>
-        <div class = "profile__contact">cell number:079 876 6345 landline:021 704 8775</div>
-    <!-- there should be a </div> here  -->
-        
-        
-        <div class="Profile">
-        <img src ="portrait.jpg" alt="profile image" class= "profile__image">
-        <!-- When putting in content like this, use the <h1> to <h6> and <p> tags to format this data, not <div> tags -->
-        <div class = "profile__name">Mike Jones</div>
-        <div class = "profile__email">MikeJones@gmail.com</div>
-        <div class = "profile__contact">cell number:078 879 6845 landline:021 708 8375</div>
-        
-        
-        <div class="Profile">
-        <img src ="portrait.jpg" alt="profile image" class= "profile__image">
-        <div class = "profile__name">Sarah Forest</div>
-        <div class = "profile__email">Sarahforest@gmail.com</div>
-        <div class = "profile__contact">cell number:074 979 5805 landline:021 708 8375</div>
-
-        
-        <div class="Profile">
-        <img src ="portrait.jpg" alt="profile image" class= "profile__image">
-        <div class = "profile__name">Jonny Dip</div>
-        <div class = "profile__email">Jonnydip@gmail.com</div>
-        <div class = "profile__contact">cell number:076 873 2145 landline:021 708 8375</div>
-        
-      
-            
-            <!-- No closing </body> or </html> tag             -->
-    
-        
+    <!--script imports before bodytag-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

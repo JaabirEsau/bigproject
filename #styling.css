@@ -1,0 +1,44 @@
+/* card display*/
+.head {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.87;
+}
+.subhead {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.54;
+}
+.card {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 16px 16px 16px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.card div {
+  display: inline-block;
+  vertical-align: text-top;
+  margin-top: 4px;
+}
+
+.zdepth2 {
+  z-index: 20;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16),
+    0 3px 6px 0 rgba(0, 0, 0, 0.23); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16),
+    0 3px 6px 0 rgba(0, 0, 0, 0.23); /* Firefox 3.5 - 3.6 */
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23); /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+/*card image styling*/
+.profile-image {
+  border-radius: 50px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.body {
+  background-color: black;
+}
