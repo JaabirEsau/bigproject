@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--css imports and page info-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--name of tab -->
+    <title>project</title>
+
+    <!--3rd party css library-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!--my  personal css to take sytling  -->
+    <link rel="stylesheet" href="styling.css" />
+  </head>
+  <body>
+    <!--my navbar-->
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">NewsFeed</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Users</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Admin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">New User</a>
+        </li>
+      </ul>
+    </nav>
+    <!--container for my card-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <!--here is my card-->
+          <div class="card zdepth2">
+            <img
+              src="400 (1).jpg"
+              alt="this is a immage"
+              class="profile-image"
+            />
+            <!--card perosn name-->
+            <p class="head">
+              Jaabir Esau
+            </p>
+            <!--extra info stuff-->
+            <p class="subhead">
+              JaabirEsau1@gamil.com
+            </p>
+            <p class="subhead">
+              cell number:079 435 8767
+            </p>
+            <p class="subhead">
+              Landline:021 704 5667
+            </p>
+            <!-- Button to Open the User Modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#User1"
+            >
+              Open info
+            </button>
+
+            <!-- The user Modal -->
+            <div class="modal" id="User1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Important info</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    User 1 data
+                  </div>
+                  <div class="modal-body">
+                    Home Address
+                  </div>
+                  <div class="modal-body">
+                    next kin name
+                  </div>
+                  <div class="modal-body">
+                    next kin relationship
+                  </div>
+                  <div class="modal-body">
+                    next kin of cell number
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end of user modal-->
+            <!-- Button to Open the delete Modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#deleteUser1"
+            >
+              Delete User
+            </button>
+
+            <!-- The delete Modal -->
+            <div class="modal" id="deleteUser1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Are you sure want to delete?</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <button class="btn btn-primary">Yes</button>
+                    <button class="btn btn-danger">No</button>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end of card-->
+        </div>
+        <div class="col-sm">
+          <!--here is my card-->
+          <div class="card zdepth2">
+            <img
+              src="400 (2).jpg"
+              alt="this is a image"
+              class="profile-image"
+            />
+            <p class="head">
+              Sarah Grey
+            </p>
+            <p class="subhead">
+              Sarahgrey@gmail.com
+            </p>
+            <p class="subhead">
+              cell number:083 345 6574
+            </p>
+            <p class="subhead">
+              Landline:021 703 7685
+            </p>
+            <!-- Button to Open the user Modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#User2"
+            >
+              Open info
+            </button>
+
+            <!-- The User 2 Modal -->
+            <div class="modal" id="User2">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Important info</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Home Address
+                  </div>
+                  <div class="modal-body">
+                    next kin name
+                  </div>
+                  <div class="modal-body">
+                    next kin relationship
+                  </div>
+                  <div class="modal-body">
+                    next of kin cell number
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end of user modul-->
+
+            <!-- Button to Open the delete Modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#deleteuser"
+            >
+              Delete User
+            </button>
+
+            <!-- The delete Modal-->
+            <div class="modal" id="deleteuser">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Are you sure wanty to delete?</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <button class="btn btn-primary">Yes</button>
+                    <button class="btn-btn-danger">No</button>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end of card-->
+        </div>
+        <div class="col-sm">
+          <!--here is my card-->
+          <div class="card zdepth2">
+            <img
+              src="400 (3).jpg"
+              alt="this is a image"
+              class="profile-image"
+            />
+            <p class="head">
+              Mariyam Tinkie
+            </p>
+            <p class="subhead">
+              MariyamTinkie@gmail.com
+            </p>
+            <p class="subhead">
+              cell number:076 353 7765
+            </p>
+            <p class="subhead">
+              Landline:021 608 5432
+            </p>
+            <!-- Button to Open the user3 Modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#User3"
+            >
+              Open info
+            </button>
+
+            <!-- The user3 Modal -->
+            <div class="modal" id="User3">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Important info</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    user 3
+                  </div>
+                  <div class="modal-body">
+                    home Address
+                  </div>
+                  <div class="modal-body">
+                    next kin name
+                  </div>
+                  <div class="modal-body">
+                    next kin relationship
+                  </div>
+                  <div class="modal-body">
+                    next kin cell number
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end of user3 modal-->
+
+            <!-- Button to Open delete the Modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#deleteUser"
+            >
+              Delete User
+            </button>
+
+            <!-- The delete Modal -->
+            <div class="modal" id="deleteUser">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Are you sure want to delete ?</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <button class="btn btn-primary">Yes</button>
+                    <button class="btn-btn-danger">No</button>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end of card-->
+        </div>
+        <div class="col-sm">
+          <!--here is my card-->
+          <div class="card zdepth2">
+            <img
+              src="400 (5).jpg"
+              alt="this is a iamge"
+              class="profile-image"
+            />
+            <p class="head">
+              Ember Green
+            </p>
+            <p class="subhead">
+              EmberGreen@gmail.com
+            </p>
+            <p class="subhead">
+              cell number:074 645 2313
+            </p>
+            <p class="subhead">
+              Landline:021 704 7685
+            </p>
+            <!-- Button to Open the user Modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#User4"
+            >
+              Open info
+            </button>
+
+            <!-- The user Modal -->
+            <div class="modal" id="User4">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    user 4
+                  </div>
+                  <div class="modal-body">
+                    home address
+                  </div>
+                  <div class="modal-body">
+                    next kin name
+                  </div>
+                  <div class="modal-body">
+                    next kin relationship
+                  </div>
+                  <div class="modal-body">
+                    next kin cell number
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end of user modul-->
+
+            <!-- Button to Open the delete Modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#deleteUser4"
+            >
+              Delete User
+            </button>
+
+            <!-- The Modal -->
+            <div class="modal" id="deleteUser4">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Are you sure want to delete?</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <button class="btn btn-primary">Yes</button>
+                    <button class="btn btn-danger">No</button>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end of card-->
+        </div>
+      </div>
+    </div>
+    <!--script imports before body tags-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

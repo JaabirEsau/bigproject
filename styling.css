@@ -1,0 +1,11 @@
+/* card stylings */
+.profile-image {
+  border-radius: 50%;
+  width: 200ppx;
+  height: 200px;
+  object-fit: cover;
+  margin: 15px auto;
+}
+body {
+  background-color: lightblue;
+}
